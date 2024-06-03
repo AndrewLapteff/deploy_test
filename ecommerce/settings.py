@@ -137,3 +137,4 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 # or
 SESSION_COOKIE_SECURE = False
 CSRF_COOKIE_SECURE = False
+CSRF_TRUSTED_ORIGINS = ["http://*", "https://*"]
