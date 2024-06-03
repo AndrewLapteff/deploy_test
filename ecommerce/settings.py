@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     "store.apps.StoreConfig",
     "whitenoise.runserver_nostatic",
 ]
-CSRF_TRUSTED_ORIGINS = ["web-production-10c0.up.railway.app"]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -136,3 +135,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 # or
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = False
